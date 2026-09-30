@@ -8030,9 +8030,9 @@ much token $i$ takes from each token.</p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><strong>Exercise.</strong> The weights are random. Which of the printed properties would still hold after training?</p>
+<p><strong>Exercise.</strong> Parts 1 to 3 print four facts: the shape of $X$, that rows 0 and 4 of $X$ are equal, the shape of $Q$, $K$ and $V$, and that every row of the weights sums to 1. The weights are random. Which of the four would still hold after training?</p>
 <details><summary>Answer</summary>
-<p>All of them. The shapes do not depend on the values of the weights, every row of a softmax sums to 1, and rows 0 and 4 of $X$ are equal because both are the same word looked up in the same table, trained or not. Training changes which positions receive large weights.</p>
+<p>All four. The shapes do not depend on the values of the weights; every row of a softmax sums to 1; and rows 0 and 4 of $X$ are equal because both are the word <em>the</em>, looked up in the same table, trained or not. Training changes which positions receive large weights.</p>
 </details>
 </div>
 </div>
