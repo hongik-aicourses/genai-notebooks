@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LLM Seminar Notebooks</title>
+<meta name="description" content="Colab notebooks for 인공지능특강 (LLMs: From Stack to Systems), Hongik University, 2026-2.">
+<style>
+:root {
+  --bg: #ffffff; --panel: #f4f5f7; --ink: #1a1a1a; --muted: #5b6068; --rule: #d9dce1;
+  --accent: #2f6fbf; --tag: #c00000;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #111418; --panel: #1a1f26; --ink: #e8eaed; --muted: #9aa3ae; --rule: #2c333c;
+    --accent: #6ea8ff; --tag: #ff6b6b;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #111418; --panel: #1a1f26; --ink: #e8eaed; --muted: #9aa3ae; --rule: #2c333c;
+  --accent: #6ea8ff; --tag: #ff6b6b;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; background: var(--bg); color: var(--ink);
+  font: 17px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans KR", sans-serif;
+}
+.wrap { max-width: 760px; margin: 0 auto; padding: 40px 16px 32px; }
+h1 { font-size: 28px; margin: 0 0 4px; text-wrap: balance; }
+h2.week { font-size: 15px; color: var(--tag); margin: 28px 0 10px; letter-spacing: .02em; }
+.sub { color: var(--muted); margin: 0 0 8px; }
+.how { color: var(--muted); margin: 0 0 8px; font-size: 15px; }
+.nb { background: var(--panel); border: 1px solid var(--rule); border-radius: 10px; padding: 16px 18px; }
+.nb h3 { font-size: 19px; margin: 0 0 6px; }
+.nb p { margin: 0 0 10px; }
+.nb .rt { color: var(--muted); font-size: 14px; }
+.links { display: flex; flex-wrap: wrap; gap: 8px; }
+.links a {
+  display: inline-block; text-decoration: none; font-size: 14.5px; font-weight: 600;
+  padding: 6px 12px; border-radius: 7px; border: 1px solid var(--rule); color: var(--accent);
+  background: var(--bg);
+}
+.links a.run { background: var(--accent); color: var(--bg); border-color: var(--accent); }
+.links a:hover { border-color: var(--accent); }
+.links a:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+.list { display: grid; gap: 12px; }
+footer { margin-top: 36px; padding-top: 14px; border-top: 1px solid var(--rule); font-size: 13.5px; color: var(--muted); }
+footer a { color: var(--accent); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>LLM seminar notebooks</h1>
+  <p class="sub">인공지능특강 &middot; LLMs: From Stack to Systems &middot; Hongik University &middot; 2026-2</p>
+  <p class="how"><b>Open in Colab</b> runs a notebook on Google's machines; nothing needs to be installed.
+  Choose <i>File &rarr; Save a copy in Drive</i> to keep your changes. <b>View</b> shows the notebook with
+  every cell already run.</p>
+  <h2 class="week">Week 5 · Attention</h2>
+  <div class="list">
+    <div class="nb">
+      <h3>H1L1 · Attention, step by step</h3>
+      <p>The worked example “France, its capital is” by hand: scores, softmax, the weighted sum, a later layer, and the next word. <span class="rt">(CPU, seconds)</span></p>
+      <div class="links">
+        <a class="run" href="https://colab.research.google.com/github/hongik-aicourses/genai-notebooks/blob/main/week05/H1L1_attention_step_by_step.ipynb">Open in Colab</a>
+        <a href="week05/H1L1_attention_step_by_step.html">View</a>
+        <a href="week05/H1L1_attention_step_by_step.ipynb" download>Download .ipynb</a>
+      </div>
+    </div>
+    <div class="nb">
+      <h3>H1L2 · Implementing attention</h3>
+      <p>Attention over a sentence in NumPy: the causal mask, one function, several heads, a transformer block, word order and position vectors. <span class="rt">(CPU, seconds)</span></p>
+      <div class="links">
+        <a class="run" href="https://colab.research.google.com/github/hongik-aicourses/genai-notebooks/blob/main/week05/H1L2_implementing_attention.ipynb">Open in Colab</a>
+        <a href="week05/H1L2_implementing_attention.html">View</a>
+        <a href="week05/H1L2_implementing_attention.ipynb" download>Download .ipynb</a>
+      </div>
+    </div>
+    <div class="nb">
+      <h3>H1L3 · What two layers of attention do</h3>
+      <p>Small transformers trained on a copying task: the previous-token head, the induction head, and why one layer is not enough. <span class="rt">(CPU, about 1 minute)</span></p>
+      <div class="links">
+        <a class="run" href="https://colab.research.google.com/github/hongik-aicourses/genai-notebooks/blob/main/week05/H1L3_induction_heads.ipynb">Open in Colab</a>
+        <a href="week05/H1L3_induction_heads.html">View</a>
+        <a href="week05/H1L3_induction_heads.ipynb" download>Download .ipynb</a>
+      </div>
+    </div>
+    <div class="nb">
+      <h3>H1L4 · Recurrence, convolution and attention</h3>
+      <p>Path length, the recurrent gradient, the convolution window, timing, and the three architectures on the same task. <span class="rt">(CPU, about 3 minutes)</span></p>
+      <div class="links">
+        <a class="run" href="https://colab.research.google.com/github/hongik-aicourses/genai-notebooks/blob/main/week05/H1L4_attention_vs_rnn_cnn.ipynb">Open in Colab</a>
+        <a href="week05/H1L4_attention_vs_rnn_cnn.html">View</a>
+        <a href="week05/H1L4_attention_vs_rnn_cnn.ipynb" download>Download .ipynb</a>
+      </div>
+    </div>
+  </div>
+  <footer>
+    &copy; 2026 Kuk Jin Jang, Hongik University. Code and text are licensed under
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>.
+    Commercial use, closed-source use or any other licensing is by permission:
+    <a href="mailto:jangkj@hongik.ac.kr">jangkj@hongik.ac.kr</a>.
+    The induction-head notebook follows Olsson et al. (2022), <i>In-context learning and induction heads</i>.
+  </footer>
+</div>
+</body>
+</html>
