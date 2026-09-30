@@ -8,10 +8,10 @@ Published with GitHub Pages at <https://hongik-aicourses.github.io/genai-noteboo
 | Week | Notebook | Colab |
 |---|---|---|
 | Week 5 | H1L1 · Attention, step by step | [open](https://colab.research.google.com/github/hongik-aicourses/genai-notebooks/blob/main/week05/H1L1_attention_step_by_step.ipynb) |
-| Week 5 | H1L2 · Implementing attention | [open](https://colab.research.google.com/github/hongik-aicourses/genai-notebooks/blob/main/week05/H1L2_implementing_attention.ipynb) |
-| Week 5 | H1L3 · What two layers of attention do | [open](https://colab.research.google.com/github/hongik-aicourses/genai-notebooks/blob/main/week05/H1L3_induction_heads.ipynb) |
-| Week 5 | H1L4 · Recurrence, convolution and attention | [open](https://colab.research.google.com/github/hongik-aicourses/genai-notebooks/blob/main/week05/H1L4_attention_vs_rnn_cnn.ipynb) |
-| Week 5 | H1L5 · Lookups, running states and chain-of-thought | [open](https://colab.research.google.com/github/hongik-aicourses/genai-notebooks/blob/main/week05/H1L5_lookups_and_parity.ipynb) |
+| Week 5 | H2L1 · Implementing attention | [open](https://colab.research.google.com/github/hongik-aicourses/genai-notebooks/blob/main/week05/H2L1_implementing_attention.ipynb) |
+| Week 5 | H3L1 · What two layers of attention do | [open](https://colab.research.google.com/github/hongik-aicourses/genai-notebooks/blob/main/week05/H3L1_induction_heads.ipynb) |
+| Week 5 | H3L2 · Recurrence, convolution and attention | [open](https://colab.research.google.com/github/hongik-aicourses/genai-notebooks/blob/main/week05/H3L2_attention_vs_rnn_cnn.ipynb) |
+| Week 5 | H3L3 · Lookups, running states and chain-of-thought | [open](https://colab.research.google.com/github/hongik-aicourses/genai-notebooks/blob/main/week05/H3L3_lookups_and_parity.ipynb) |
 
 ## Where the files come from
 
