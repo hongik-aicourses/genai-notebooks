@@ -8039,7 +8039,7 @@ length 92 and it does the only thing a table can do:</p>
         <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">mode</span><span class="si">:</span><span class="s2">8s</span><span class="si">}</span><span class="s2">: ran fine at length 92"</span><span class="p">)</span>
     <span class="k">except</span> <span class="ne">IndexError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
         <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">mode</span><span class="si">:</span><span class="s2">8s</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="nb">type</span><span class="p">(</span><span class="n">e</span><span class="p">)</span><span class="o">.</span><span class="vm">__name__</span><span class="si">}</span><span class="s2"> -- </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">"          it does not degrade past its table. It STOPS."</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"          the table has no row for this position, so the model cannot run."</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -8054,7 +8054,7 @@ length 92 and it does the only thing a table can do:</p>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
 <pre>rope    : ran fine at length 92
 learned : IndexError -- index out of range in self
-          it does not degrade past its table. It STOPS.
+          the table has no row for this position, so the model cannot run.
 </pre>
 </div>
 </div>
