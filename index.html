@@ -85,8 +85,35 @@ footer a { color: var(--accent); }
       </div>
     </div>
   </div>
-  <h2 class="week">Week 6 · Attention against recurrence, and position</h2>
+  <h2 class="week">Week 6 · Position and RoPE</h2>
   <div class="list">
+    <div class="nb">
+      <h3>H1L1 · RoPE on a small example</h3>
+      <p>The rotation of one pair by hand: what rotates, why only the offset remains, six keys and one query, and the 64 pairs of a real head. Parts 1–2 go with Hour 1, parts 3–4 with Hour 2. <span class="rt">(CPU, seconds)</span></p>
+      <div class="links">
+        <a class="run" href="https://colab.research.google.com/github/hongik-aicourses/genai-notebooks/blob/main/week06/H1L1_rope_small_example.ipynb">Open in Colab</a>
+        <a href="week06/H1L1_rope_small_example.html">View</a>
+        <a href="week06/H1L1_rope_small_example.ipynb" download>Download .ipynb</a>
+      </div>
+    </div>
+    <div class="nb">
+      <h3>H2L1 · Learning the angle</h3>
+      <p>Gradient descent chooses the angle of RoPE: one pair learns to attend three positions back, and a trained head learns to attend to the country in “the capital of france is”. <span class="rt">(CPU, about 2 minutes)</span></p>
+      <div class="links">
+        <a class="run" href="https://colab.research.google.com/github/hongik-aicourses/genai-notebooks/blob/main/week06/H2L1_learning_the_angle.ipynb">Open in Colab</a>
+        <a href="week06/H2L1_learning_the_angle.html">View</a>
+        <a href="week06/H2L1_learning_the_angle.ipynb" download>Download .ipynb</a>
+      </div>
+    </div>
+    <div class="nb">
+      <h3>H3L1 · Beyond the training length</h3>
+      <p>Learned absolute positions and RoPE trained at length 64 and tested on longer sequences, and how much position interpolation recovers. <span class="rt">(GPU about 1 minute, CPU about 3 minutes)</span></p>
+      <div class="links">
+        <a class="run" href="https://colab.research.google.com/github/hongik-aicourses/genai-notebooks/blob/main/week06/H3L1_beyond_training_length.ipynb">Open in Colab</a>
+        <a href="week06/H3L1_beyond_training_length.html">View</a>
+        <a href="week06/H3L1_beyond_training_length.ipynb" download>Download .ipynb</a>
+      </div>
+    </div>
     <div class="nb">
       <h3>H3L2 · Recurrence, convolution and attention</h3>
       <p>Path length, the recurrent gradient, the convolution window, timing, and the three architectures on the same task. <span class="rt">(CPU, about 3 minutes)</span></p>
